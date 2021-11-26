@@ -34,6 +34,11 @@ Below, you can find the __dataset dictionary__.
 
 
 # Business question
+
+We have two main questions:
+
+1. What are the real states House Rocket should buy, and how much will it cost?
+2. What is the best moment to sell the real states, and how much will it cost? 
     
 # Business assumptions 
 
