@@ -4,12 +4,11 @@
   <img src="https://media.istockphoto.com/photos/home-for-sale-real-estate-sign-and-house-picture-id168769007?b=1&k=20&m=168769007&s=170667a&w=0&h=tUpO0uPn6vE4y-nI4hc770jraItM0rxUEi8YJuzM6q8="/>
 </p>
 
+This is an insights project where a data base from house sales in the King County (USA) was used to generate insights to help the CEO on making decisions about buying and selling properties. The *kc_house_data* can be found on [Kaggle](https://www.kaggle.com/harlfoxem/housesalesprediction). 
 
-Este é um projeto de insights que utiliza a base de dados *kc_house_data* contendo dados sobre venda de imóveis no condado de King, nos Estados Unidos. Os dados podem ser encontrados no  [Kaggle](https://www.kaggle.com/harlfoxem/housesalesprediction). 
+Below, you can find the __dataset dictionary__.
 
-Abaixo, você encontra o __dicionário de dados__.
-
-**Variável** | **Significado** 
+**Variable** | **Meaning** 
 --- | --- 
 `id`  | Unique ID for each home sold
 `date`| Date of the home sale
@@ -34,16 +33,16 @@ Abaixo, você encontra o __dicionário de dados__.
 `sqft_lot15` | The square footage of the land lots of the nearest 15 neighbors
 
 
-# Questão de negócio
+# Bussiness question
     
-# Premissas do negócio 
+# Bussiness assumptions 
 
-# Planejamento da solução.
+# Solution Planning
 
-# Principais insights de negócio
+# Main bussiness insights
 
-# Resultados financeiros para o negócio
+# Bussiness results
 
-# Conclusão
+# Conclusion
    
-# Próximos passos
+# Next Steps
