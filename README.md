@@ -33,15 +33,15 @@ Below, you can find the __dataset dictionary__.
 `sqft_lot15` | The square footage of the land lots of the nearest 15 neighbors
 
 
-# Bussiness question
+# Business question
     
-# Bussiness assumptions 
+# Business assumptions 
 
 # Solution Planning
 
-# Main bussiness insights
+# Main business insights
 
-# Bussiness results
+# Business results
 
 # Conclusion
    
