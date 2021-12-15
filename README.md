@@ -1,4 +1,4 @@
-# House Rocket Insights Project
+# House Rocket - Insight Project
 
 <p align="center">
   <img src="https://media.istockphoto.com/photos/home-for-sale-real-estate-sign-and-house-picture-id168769007?b=1&k=20&m=168769007&s=170667a&w=0&h=tUpO0uPn6vE4y-nI4hc770jraItM0rxUEi8YJuzM6q8="/>
