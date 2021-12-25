@@ -50,6 +50,8 @@ We have two main questions:
 
 - New houses are not substantially more expensive than old houses, on average. 
 - Houses without basement are 22.56% bigger in total area than houses with basement.
+- Waterfront houses are 212.64% more expensive, on average.
+![](img/price_waterfront.png)
 
 # Business results
 
