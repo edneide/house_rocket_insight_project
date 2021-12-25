@@ -44,14 +44,40 @@ We have two main questions:
     
 # Business assumptions 
 
-
-
 # Solution Planning
 
 # Main business insights
 
+- New houses are not substantially more expensive than old houses, on average. 
+- Houses without basement are 22.56% bigger in total area than houses with basement.
+
 # Business results
 
+## H1: Houses with waterfront are, on average, 30% more expensive.
+**Conclusion**: False. Houses with waterfront are, on average, 212.64% more expensive. The mean price of houses without waterfront is U\$ 531,563.60, while this price is, on average, U\$ 1,661,876.025 for waterfront houses.
+
+## H2: Houses built before 1955, are 50% cheaper, on average.
+
+**Conclusion**: False. In average, "new" properties (year built >= 1955) are only 0.79% more expensive than the old ones (year built < 1955). The mean price of the old proporties is U$ 537,050.91 while the mean price of new properties is U$ 541,299.97.
+
+## H3: Houses without basement have total area (sqft_lot) 40% bigger than houses with basement.
+
+**Conclusion**: False. Although the proporties without basement are slightly bigger, they are only 22.56% bigger, not 40%. In average, properties without basement has area 16,284.18 square feet. Properties with basement has an area, in average, of 13,286.30 square feet.
+
+## H4: The YoY (Year Over Year)  growth on houses price is 10%.
+
+**Conclusion**: False. The YOY growth was only 0.52% between 2014 and 2015.
+
+## H5: Houses with 3 bathrooms have a 15% MoM (Month over Month) price growth
+**Conclusion**: False. The average MoM price growth was only 0.375%.
+
+
 # Conclusion
+
+If the houses are sold by the suggested price, the expected total profit would be U$ 760,693,197.90. 
    
 # Next Steps
+
+- Explore the possibility to renovate the house and sell them.
+- Explore models to predict houses prices based on some features. 
+
