@@ -6,6 +6,8 @@
 
 This is an insight project where a data base from house sales in the King County (USA) was used to generate insights to help the CEO on making decisions about buying and selling properties. The *kc_house_data* can be found on [Kaggle](https://www.kaggle.com/harlfoxem/housesalesprediction). 
 
+Here, you can find the final dashboard for this project: [House Rocket App](https://house-rocket-insightapp.herokuapp.com/)
+
 Below, you can find the __dataset dictionary__.
 
 **Variable** | **Meaning** 
@@ -41,6 +43,8 @@ We have two main questions:
 2. What is the best moment to sell the real states, and how much will it cost? 
     
 # Business assumptions 
+
+
 
 # Solution Planning
 
