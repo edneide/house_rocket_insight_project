@@ -48,38 +48,81 @@ We have two main questions:
 
 # Main business insights
 
-- New houses are not substantially more expensive than old houses, on average. 
-- Houses without basement are 22.56% bigger in total area than houses with basement.
-- Waterfront houses are 212.64% more expensive, on average.
+- New houses(built from 1955) are not substantially more expensive than old houses (built before 1955), on average they are only 0.78% cheaper. So it worth to buy new houses, because we know they are not so expensive as we expected.
+- Houses without basement are 22.56% bigger in total area than houses with basement. It means that, if we want bigger total area we should choose houses without basement.
+- Waterfront houses are 212.64% more expensive, on average. Waterfront houses are more expensive than expected, so we should only buy houses like that if the profit is good. 
 ![](img/price_waterfront.png)
 
 # Business results
 
 ## H1: Houses with waterfront are, on average, 30% more expensive.
-**Conclusion**: False. Houses with waterfront are, on average, 212.64% more expensive. The mean price of houses without waterfront is U\$ 531,563.60, while this price is, on average, U\$ 1,661,876.025 for waterfront houses.
+
+**Conclusion**: FALSE. Houses with waterfront are, on average, 212.64% more expensive. The mean price of houses without waterfront is U\$ 531,563.60, while this price is, on average, U\$ 1,661,876.025 for waterfront houses.
+
+**Translation for business**: If we want to buy for a smaller price, it is better to invest on houses without waterfront, unless the profit is equally bigger. 
+
 
 ## H2: Houses built before 1955, are 50% cheaper, on average.
 
-**Conclusion**: False. In average, "new" properties (year built >= 1955) are only 0.79% more expensive than the old ones (year built < 1955). The mean price of the old proporties is U$ 537,050.91 while the mean price of new properties is U$ 541,299.97.
+**Conclusion**: FALSE. In average, "new" properties (year built >= 1955) are only 0.79% more expensive than the old ones (year built < 1955). The mean price of the old proporties is U$ 537,050.91 while the mean price of new properties is U$ 541,299.97.
+
+**Translation for business**: We can buy new houses because they do not seem to be so expensive, on average, when compared to old houses.
 
 ## H3: Houses without basement have total area (sqft_lot) 40% bigger than houses with basement.
 
-**Conclusion**: False. Although the proporties without basement are slightly bigger, they are only 22.56% bigger, not 40%. In average, properties without basement has area 16,284.18 square feet. Properties with basement has an area, in average, of 13,286.30 square feet.
+**Conclusion**: FALSE. Although the proporties without basement are slightly bigger, they are only 22.56% bigger, not 40%. In average, properties without basement has area 16,284.18 square feet. Properties with basement has an area, in average, of 13,286.30 square feet.
+
+**Translation for business**: It seems houses without basement are bigger on area. If you want bigger area, you should invest in houses without basement. 
 
 ## H4: The YoY (Year Over Year)  growth on houses price is 10%.
 
-**Conclusion**: False. The YOY growth was only 0.52% between 2014 and 2015.
+**Conclusion**: FALSE. The YOY growth was only 0.52% between 2014 and 2015.
 
-## H5: Houses with 3 bathrooms have a 15% MoM (Month over Month) price growth
-**Conclusion**: False. The average MoM price growth was only 0.375%.
+**Translation for business**: The house's price did not increase a lot between 2014 and 2015.
+ 
+## H5: Houses with 3 bathrooms have a 15% MoM (Month over Month) price growth.
+**Conclusion**: FALSE. The average MoM price growth was only 0.375%.
+
+## H6: Houses are renovated, on average, after 30 years from the built year.
+**Conclusion**: False. Houses are renovated, in average, 56.3 years after they are built.
+
+## H7: The YoY (Year over Year) area growth is - 5%, i. e., the house's size become smaller over year. 
+**Conclusion**: FALSE. There is an average increase of 7.23% in the area of the proporties over the years.
+
+## H8: Houses are 20% cheaper on the winter. 
+**Conclusion**: FALSE. Although the prices have shown to be smaller in the winter, they are only 3.87% smaller, on average, not 20%.
+
+**Season** | **Price** 
+---------- | --------- 
+Fall | 529,161.32
+Spring | 558,081.05 
+Summer | 540,114.84 
+Winter | 521,194.66 
+
+## H9: In the summer the profit from sale is 35% bigger than the winter season.
+
+**Conclusion**: FALSE. The profit is only 5.82% bigger in the Summer than in the Winter.
+
+**Season** | **Profit** 
+---------- | --------- 
+Fall	| 69,685.62
+Spring	| 73,085.28
+Summer	| 71,852.68
+Winter	| 67,900.18
+
+
+## H10:  Houses with waterfront has an area 25% bigger than the houses without waterfront.
+
+**Conclusion**: FALSE. The total area of waterfront properties are 68.82% bigger than the area of not waterfron ones.
 
 
 # Conclusion
 
-If the houses are sold by the suggested price, the expected total profit would be U$ 760,693,197.90. 
+With this project we have found interisting insights about the houses. Obviously, much more hypotheis can be tested, but the those that were tested so far answered some questions about selling and buying houses, and now we have sggestions based on the data available to give the CEO. Furthemore, we have implemented the solution in user-friendly dashboard ([House Rocket App](https://house-rocket-insightapp.herokuapp.com/)) where the CEO can select the houses based on some features.
+Finally, as a businees result we have that if the houses are sold by the suggested price, the expected total profit would be U$ 760,693,197.90. 
    
 # Next Steps
 
-- Explore the possibility to renovate the house and sell them.
+- Explore the possibility to buy houses in bad conditions, renovate and sell them.
 - Explore models to predict houses prices based on some features. 
 
