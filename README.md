@@ -44,7 +44,28 @@ We have two main questions:
     
 # Business assumptions 
 
+- We assumed that the season and region have an impact on the houses prices.
+- We considered old houses as the ones built before 1955.
+- For each region and for houses in good conditions, we considered houses suitable for buying the ones whose price is smaller than the average price in the region.
+- For each region + season, we calculate the mean price and stated the sales condition as the follow:
+   + If the house price is bigger than the median of region + season
+      + The sale price will be the purchase price + 10 %
+   + If the house price is lower than the median of region + season
+      + The sale price will be the purchase price + 30 %
+
 # Solution Planning
+
+1. Collect the data on Kaggle
+2. Change the data type for appropriate one for some features
+3. Create new features
+  - `month` 
+  - `year`
+  - `old`
+  - `season`
+  - `basement`
+  - `is_waterfront`
+4. Test the hypothesis
+
 
 # Main business insights
 
@@ -81,13 +102,23 @@ We have two main questions:
 **Translation for business**: The house's price did not increase a lot between 2014 and 2015.
  
 ## H5: Houses with 3 bathrooms have a 15% MoM (Month over Month) price growth.
+
 **Conclusion**: FALSE. The average MoM price growth was only 0.375%.
 
+
+**Translation for business**: Price of houses with 3 bathrooms do not change month over month.
+
 ## H6: Houses are renovated, on average, after 30 years from the built year.
-**Conclusion**: False. Houses are renovated, in average, 56.3 years after they are built.
+
+**Conclusion**: FALSE. Houses are renovated, in average, 56.3 years after they are built.
+
+**Translation for business**: Houses renovation takes more time than we expected, so depending on the year built, and of course, house condition, we do not need to worry a lot about renovation in short time.
 
 ## H7: The YoY (Year over Year) area growth is - 5%, i. e., the house's size become smaller over year. 
+
 **Conclusion**: FALSE. There is an average increase of 7.23% in the area of the proporties over the years.
+
+**Translation for business**: We do not see a trend on size reduction for the houses' area over time.
 
 ## H8: Houses are 20% cheaper on the winter. 
 **Conclusion**: FALSE. Although the prices have shown to be smaller in the winter, they are only 3.87% smaller, on average, not 20%.
@@ -99,22 +130,26 @@ Spring | 558,081.05
 Summer | 540,114.84 
 Winter | 521,194.66 
 
+**Translation for business**: Houses are cheaper in the winter, on average, but the difference on the average price when compared to the other seasons are not so big.
+
 ## H9: In the summer the profit from sale is 35% bigger than the winter season.
 
 **Conclusion**: FALSE. The profit is only 5.82% bigger in the Summer than in the Winter.
 
 **Season** | **Profit** 
 ---------- | --------- 
-Fall	| 69,685.62
+Fall	  | 69,685.62
 Spring	| 73,085.28
 Summer	| 71,852.68
 Winter	| 67,900.18
 
+**Translation for business**: From the table above we see that the biggest profit occurs in the Spring, and this season may be the best to sell the houses.
 
 ## H10:  Houses with waterfront has an area 25% bigger than the houses without waterfront.
 
-**Conclusion**: FALSE. The total area of waterfront properties are 68.82% bigger than the area of not waterfron ones.
+**Conclusion**: FALSE. The total area of waterfront properties are 68.82% bigger than the area of not waterfront ones.
 
+**Translation for business**: If you want houses with bigger areas, waterfront houses are definetely a good choice. 
 
 # Conclusion
 
@@ -125,4 +160,5 @@ Finally, as a businees result we have that if the houses are sold by the suggest
 
 - Explore the possibility to buy houses in bad conditions, renovate and sell them.
 - Explore models to predict houses prices based on some features. 
+- Test more hypothesis.
 
