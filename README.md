@@ -153,7 +153,7 @@ Winter	| 67,900.18
 
 # Conclusion
 
-With this project we have found interisting insights about the houses. Obviously, much more hypotheis can be tested, but the those that were tested so far answered some questions about selling and buying houses, and now we have sggestions based on the data available to give the CEO. Furthemore, we have implemented the solution in user-friendly dashboard ([House Rocket App](https://house-rocket-insightapp.herokuapp.com/)) where the CEO can select the houses based on some features.
+With this project we have found interisting insights about the houses. Obviously, much more hypotheis can be tested, but those that were tested so far, answered some questions about selling and buying houses, and now we have sggestions based on the data available to give the CEO. Furthemore, we have implemented the solution in user-friendly dashboard ([House Rocket App](https://house-rocket-insightapp.herokuapp.com/)) where the CEO can select the houses based on some features.
 Finally, as a businees result we have that if the houses are sold by the suggested price, the expected total profit would be U$ 760,693,197.90. 
    
 # Next Steps
