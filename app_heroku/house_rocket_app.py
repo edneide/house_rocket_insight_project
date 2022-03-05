@@ -136,7 +136,7 @@ def houses_to_buy_and_sell(data):
 def tested_hypothesis(data):
     st.title('Hypotheses Tested')
     c1, c2 = st.columns((1, 1))
-    c1.subheader('H1: Imóveis que possuem vista para água são 30 % mais caros na média.')
+    c1.subheader('H1: Houses with waterfront are, on average, 30% more expensive.')
     # H1
     y0 = data[data['waterfront'] == 0]['price']
     y1 = data[data['waterfront'] == 1]['price']
@@ -153,7 +153,7 @@ def tested_hypothesis(data):
     c1.plotly_chart(fig, use_container_width=True)
 
     # H2
-    c2.subheader('H2: Imóveis com data de construção menor que 1955, são 50% mais baratos, na média.')
+    c2.subheader('H2: Houses built before 1955, are 50% cheaper, on average.')
     y0 = data[data['old'] == '< 1955']['price']
     y1 = data[data['old'] != '< 1955']['price']
 
@@ -172,7 +172,7 @@ def tested_hypothesis(data):
 
     # H3
     c1, c2 = st.columns((1, 1))
-    c1.subheader('H3: Imóveis sem porão possuem área total (sqft_lot) que são 40% maiores do que os imóveis com porão.')
+    c1.subheader('H3: Houses without basement have total area (sqft_lot) 40% bigger than houses with basement.')
     data[['sqft_lot', 'basement']].groupby('basement').mean().reset_index()
     y0 = data[data['basement'] == 'Yes']['sqft_lot']
     y1 = data[data['basement'] == 'No']['sqft_lot']
@@ -189,7 +189,7 @@ def tested_hypothesis(data):
     c1.plotly_chart(fig, use_container_width=True)
 
     # H4
-    c2.subheader('H4: O crescimento do preço dos imóveis YoY (Year Over Year) é de 10%')
+    c2.subheader('H4: The YoY (Year Over Year) growth on houses price is 10%.')
     mean_price_2014 = data[data['year'] == 2014]['price'].mean()
     mean_price_2015 = data[data['year'] == 2015]['price'].mean()
     # Standard deviation
@@ -213,11 +213,11 @@ def tested_hypothesis(data):
     c1, c2 = st.columns((1, 1))
     three_bathrooms_df = data[data['bathrooms'] == 3][['price', 'month']].groupby('month').mean().reset_index()
     fig = px.line(three_bathrooms_df, x='month', y='price')
-    c1.subheader('H5: Imóveis com 3 banheiros tem um crescimento de preço MoM (Month over Month) de 15%.')
+    c1.subheader('H5: Houses with 3 bathrooms have a 15% MoM (Month over Month) price growth.')
     c1.plotly_chart(fig, use_container_width=True)
 
     # H6
-    c2.subheader('H6: Imóveis são reformados, em média, após 30 anos da data de construção.')
+    c2.subheader('H6: Houses are renovated, on average, after 30 years from the built year.')
     renovated_df = data[data['yr_renovated'] != 0].copy().reset_index()
     renovated_df['time_diff'] = renovated_df['yr_renovated'] - renovated_df['yr_built']
     fig = px.histogram(renovated_df, x="time_diff")
@@ -226,24 +226,24 @@ def tested_hypothesis(data):
 
     # H7
     c1, c2 = st.columns((1, 1))
-    c1.subheader('H7: A área dos imóveis YoY (Year Over Year) é 5% menor')
+    c1.subheader('H7: The YoY (Year over Year) area growth is - 5%, i. e., the house\'s size become smaller over year.')
     area_by_year_df = data[['yr_built', 'sqft_lot']].groupby('yr_built').mean().reset_index()
     fig = px.line(area_by_year_df, x='yr_built', y='sqft_lot')
     c1.plotly_chart(fig, use_container_width=True)
 
     # H8
-    c2.subheader('H8: Os imóveis são 20%  mais baratos no inverno.')
+    c2.subheader('H8: Houses are 20% cheaper on the winter.')
     fig = px.box(data, x="season", y="price")
     c2.plotly_chart(fig, use_container_width=True)
 
     # H9
     c1, c2 = st.columns((1, 1))
-    c1.subheader('H9: No verão o lucro de vendas é 35% maior que no inverno.')
+    c1.subheader('H9: In the summer the profit from sale is 35% bigger than the winter season.')
     fig = px.box(df_profit(data), x="season", y="profit")
     c1.plotly_chart(fig, use_container_width=True)
 
     # H10
-    c2.subheader('H10: A área de imóveis com waterfront é 25% maior que a área dos imóveis sem waterfront.')
+    c2.subheader('H10: Houses with waterfront has an area 25% bigger than the houses without waterfront.')
     fig = px.box(data, x="waterfront", y="sqft_lot")
     c2.plotly_chart(fig, use_container_width=True)
 
